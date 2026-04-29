@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+#wrapper {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #4a6365 0%, #c3cfe2 100%);
+   
+    background: linear-gradient(to bottom, #031716, #032f30, #0a7075, #0c969c, #6ba3be, #274d60);
+    padding: 2rem;
+}
+
+.container {
+    max-width: 500px;
+
+     margin: 0 auto; 
+  background-color: #031716;
+    border-radius: px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.form-container {
+    width: 100%;
+}
+
+h1 {
+    color: #f4f4f4;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-family: 'monument';
+    font-weight: 500;
+}
+
+.Home{
+    justify-content: left;
+align-items: center;
+a{
+    text-decoration: none;
+    color: #000;
+}
+i{
+    font-size: 20px;
+}
+}
+
+
+.box1{
+    text-align: center;
+    color: #020101;
+}
+
+
+.textbox {
+    margin-bottom: 1.5rem;
+}
+
+.textbox input,
+.textbox textarea,
+.field-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #336b6c;
+    border-radius: 16px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    background-color: rgb(243, 245, 245);
+}
+.textbox input ::placeholder{
+    color: rgb(83, 114, 118);
+}
+
+.textbox textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.field-group {
+    margin-bottom: 1.5rem;
+}
+
+.field-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #000000;
+    font-size: 0.9rem;
+}
+
+.textbox input:focus,
+.textbox textarea:focus,
+.field-group select:focus {
+    outline: none;
+    border-color: #020203;
+    box-shadow: 0 0 0 2px rgba(7, 8, 8, 0.2);
+}
+
+.btn {
+    width: 100%;
+    padding: 14px 10px;
+    border-radius: 12px;
+    background-color: #1f5355;
+    border: none;
+    a{
+        text-decoration: none;
+        color: black;
+        font-size:large;
+        font-weight: 700;
+        font-family: 'gilroy-regular';
+    }
+}
+
+.box1{
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    margin-top: 0rem;
+   
+}
+
+
+.btn:hover {
+    background-color: #538da1b5;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.btn:hover a{
+    color: #3d6d76;
+
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+} 
+ 
+
+.responsive{
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 160px;
+    justify-content: space-between;
+}

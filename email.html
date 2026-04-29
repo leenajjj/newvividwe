@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Send Email</title>
+  <link rel="stylesheet" href="style2.css">
+  <script>
+    // Function to validate email format and redirect to the email client
+    function validateAndSendEmail() {
+      var email = document.getElementById('emailInput').value;  // Get the email entered by the user
+      var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;  // Regular expression for basic email validation
+
+      // Check if the email matches the pattern
+      if (emailPattern.test(email)) {
+        var subject = "Business Inquiry";  // Customize subject as needed
+        var body = "Hello, I have a question regarding...";  // Customize body as needed
+        
+        // Redirect to email client with pre-filled subject and body
+        var mailtoLink = "mailto:bhumipatil1425@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body + "\n\nFrom: " + email);
+        window.location.href = mailtoLink;
+      } else {
+        // Show an alert if the email format is invalid
+        alert("Please enter a valid email address.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Contact Us</h1>
+  <p>Thank you for visiting our website. We are hoping that you loved our content. For any further queries, please contact us.</p>
+  
+  <h2>E-MAIL</h2>
+  <p>Please enter your email address to send us a message:</p>
+  
+  <!-- Input field for Email -->
+  <input type="email" id="emailInput" placeholder="Enter your email" required>
+  <br><br>
+  
+  <!-- Button to trigger email validation and redirection -->
+  <button onclick="validateAndSendEmail()">Send Email</button>
+</body>
+</html>

@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+header .background-image {
+    
+    height: 20vh;
+    position: relative;
+    a{
+        background-color: #a49d9d3c;
+        border-radius: 10px;
+        color: #ffffffb5;
+
+       
+    }
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    justify-content: baseline;
+    align-items: baseline;
+    border: 3px solid #000000;
+}
+
+.container{
+    display: flex;
+    gap: 30px;
+    
+}
+
+header .overlay h1 {
+    font-size: 3rem;
+}
+
+header .overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+header .overlay .btn {
+    text-decoration: none;
+    background-color: #a03838;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+section.about, section.about-details, section.contact-form {
+    padding: 40px;
+    text-align: center;
+}
+
+section.about h2, section.about-details h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section.about p, section.about-details p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+section.about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section.about ul li {
+    margin-bottom: 10px;
+}
+
+section.contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+section.contact-form label {
+    margin: 10px 0 5px;
+}
+
+section.contact-form input, section.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+section.contact-form .btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #274f4f;
+    color: white;
+}
+
+footer a {
+    color: #000000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative; /* Set the body as relative for absolute positioning */
+}
+
+.icons {
+    position: fixed; 
+    display: flex;     
+    gap: 30px;     /* Fix the position to the viewport */
+    bottom: 20px;              /* 20px from the bottom of the page */
+    left: 50%;                 /* Center horizontally using 50% */
+    transform: translateX(-50%); /* Adjust by 50% of its own width to center it */
+    text-align: center;        /* Center the content inside */
+}
+
+/* Icon styling */
+.icons i {
+    font-size: 40px;           /* Example: Adjust the size of the icon */
+    color: #333;               /* Icon color */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.icons i:hover {
+    transform: scale(1.2);     /* Slightly increase the size of the icon when hovered */
+}
+  
+
+
+
+
+
+
+
+/* ------------------------------------ */
+/*      Base Styles (Your Existing)      */
+/* ------------------------------------ */
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #031716, #032f30, #0a7075, #0c969c, #6ba3be, #274d60);
+    color: #ffffff;
+    text-align: center;
+    overflow-x: hidden;
+  }
+  
+  /* Header */
+  header {
+    background-color: rgba(3, 23, 22, 0.8);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .nav-icons {
+    display: flex;
+    gap: 20px;
+  }
+  .nav-icons a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-icons a:hover {
+    color: #6ba3be;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  /* Search bar */
+  .search-bar input {
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 20px;
+    outline: none;
+    width: 200px;
+  }
+  
+  /* Main Section */
+  .main-section {
+    padding: 50px 20px;
+  }
+  
+  .main-section h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .main-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 30px;
+  }
+  
+  /* Recent Artists Section */
+  .recent-artists {
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .recent-artists h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .artists-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .artist-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .artist-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #6ba3be;
+  }
+  
+  .artist-card .artist-info {
+    padding: 15px;
+  }
+  
+  .artist-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .artist-card h3 {
+    font-size: 22px;
+    margin: 10px 0;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: rgba(3, 47, 48, 0.8);
+    padding: 10px;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+  }
+  
+  /* Bubble Cursor */
+  .bubble {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: bubble 4s infinite;
+    mix-blend-mode: screen;
+  }
+  
+  @keyframes bubble {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-1000px) scale(0.5);
+      opacity: 0;
+    }
+  }
+  
+  /* ------------------------------------ */
+  /*   New Styles for IG-like Profile     */
+  /* ------------------------------------ */
+  
+  /* Profile Container (like an Instagram profile page) */
+  .profile-section {
+    max-width: 1200px;
+    margin: 100px auto 80px; /* Ensure it doesn't overlap the sticky footer */
+    padding: 0 20px;
+    text-align: left;
+  }
+  
+  /* Profile Header (avatar, username, bio area) */
+  .profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #6ba3be;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .profile-username {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .profile-bio {
+    font-size: 16px;
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.4;
+    color: #ffffff;
+  }
+  
+  /* Stats Section (Posts, Followers, Following) */
+  .profile-stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+  }
+  
+  .profile-stats div {
+    text-align: center;
+  }
+  
+  .profile-stats div span {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    color: #6ba3be;
+  }
+  
+  /* Tabs (Posts | Reels | Tagged) */
+  .profile-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+  
+  .profile-tabs a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .profile-tabs a:hover {
+    color: #6ba3be;
+  }
+  
+  .profile-tabs .active {
+    color: #6ba3be;
+    border-bottom: 2px solid #6ba3be;
+  }
+  
+  

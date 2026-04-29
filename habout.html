@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Vividshe</title>
+  <link rel="stylesheet" href="habout.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">VIVIDShe</div>
+    <div class="nav-icons">
+      <a href="first.html"><i class="fas fa-home"></i> Home</a>
+      <!-- <a href="about.html"><i class="fas fa-info-circle"></i> About</a> -->
+      <a href="index.html"><i class="fas fa-user"></i> Login/Signup</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <div class="about-section">
+    <h1>About VIVIDShe</h1>
+    <p>
+      Vividshe is a unique platform aimed at empowering women by providing them with a space to express their creativity and share their artistic talents. Our goal is to celebrate the diversity, resilience, and brilliance of women artists across the globe. 
+    </p>
+    <p>
+      At Vividshe, we believe that art has the power to inspire, heal, and connect. Whether you're an established artist or just starting your creative journey, Vividshe welcomes you to a community that values your talent and encourages your growth. 
+    </p>
+    <h2>Our Mission</h2>
+    <p>
+      Our mission is to create a vibrant and inclusive community that celebrates women's art and talent. By connecting artists, art enthusiasts, and opportunities, Vividshe strives to inspire creativity and break barriers for women in the art world.
+    </p>
+    <h2>What We Offer</h2>
+    <ul>
+      <li>A platform to showcase and promote your artwork</li>
+      <li>Opportunities to connect with fellow artists and art enthusiasts</li>
+      <li>Workshops, resources, and tools to nurture your artistic journey</li>
+      <li>A safe and supportive environment for women artists</li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Vividshe | All Rights Reserved
+  </footer>
+
+  <!-- Bubble Cursor -->
+  <script>
+    // Bubble cursor effect
+    const body = document.body;
+
+    body.addEventListener('mousemove', (e) => {
+      const bubble = document.createElement('div');
+      bubble.classList.add('bubble');
+      bubble.style.left = `${e.pageX}px`;
+      bubble.style.top = `${e.pageY}px`;
+      body.appendChild(bubble);
+
+      setTimeout(() => {
+        bubble.remove();
+      }, 2000);
+    });
+  </script>
+</body>
+</html>

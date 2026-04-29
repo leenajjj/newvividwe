@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vividshe Artist Levels</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #031716, #032f30, #0a7075, #0c969c, #6ba3be, #274d60);
+            color: #2c2c2c;
+        }
+        header {
+            background-color: #011a1d;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.2rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .level {
+            background-color: #fff;
+            border: 1px solid #ffd1e1;
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .level:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+        .level h2 {
+            margin-top: 1rem;
+            color: #105d60;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+        .level p {
+            margin: 1rem 0;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .level .badge {
+            display: inline-block;
+            padding: 0.6rem 1.2rem;
+            border-radius: 20px;
+            background-color: #021e21;
+            color: white;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vividshe Artist Levels</h1>
+        <p>Empowering women artists to shine at every stage of their journey.</p>
+    </header>
+
+    <div class="container">
+        <!-- Beginner Level -->
+        <div class="level">
+            <div class="badge">Level 1: Beginner</div>
+            <a href="level1.html"><h2>Beginner</h2></a>
+            <p>You’re just starting your journey as an artist. Let your curiosity lead the way!</p>
+            <p><strong>Focus:</strong> Learning basics, experimenting, and building confidence.</p>
+        </div>
+
+        <!-- Intermediate Level -->
+        <div class="level">
+            <div class="badge">Level 2: Intermediate</div>
+            <a href="level2.html"><h2>Intermediate</h2></a>
+            <p>You’ve gained some skills and are ready to showcase your growing talent.</p>
+            <p><strong>Focus:</strong> Refining techniques, exploring styles, and gaining feedback.</p>
+        </div>
+
+        <!-- Advanced Level -->
+        <div class="level">
+            <div class="badge">Level 3: Advanced</div>
+           <a href="level3.html"> <h2>Advanced</h2></a>
+            <p>Your skills are polished, and your work inspires others. You’re ready for bigger challenges.</p>
+            <p><strong>Focus:</strong> Mastery, creating a signature style, and mentoring others.</p>
+        </div>
+
+        <!-- Expert Level -->
+        <div class="level">
+            <div class="badge">Level 4: Expert</div>
+            <a href="level4.html"><h2>Expert</h2></a>
+            <p>You’re at the top of your game, leading in your field and shaping the future of art.</p>
+            <p><strong>Focus:</strong> Innovating, teaching, and leaving a legacy.</p>
+        </div>
+    </div>
+</body>
+</html>

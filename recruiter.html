@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="recruiter.css" />
+  </head>
+  <body>
+    <h1 id="title">VIVIDShe</h1>
+    <p id="description">Thank you for taking  time to register yourself</p>
+    <form id ="register-form" method="post" action=" ">
+    <div class="register">
+
+       <label  id="name-label">Name:<input placeholder="Enter your name" id="name" name="name" type="text" required />
+       </label><br>
+
+        <label for="contactInput">Business Contact Details:</label>
+        <input type="text" id="contactInput" name="contactInput" placeholder="E-mail / Contact no."><br></br>
+
+        <label for="OTP">One Time Code:</label>
+        <input type="text" id="otp" name="otp" placeholder="Enter OTP" maxlength="6" pattern="\d{6}" required>
+
+        </label>
+        
+        <fieldset>
+          <label for="dropdown">From which field you want to hire?
+         <select id="dropdown" name="role">
+          <option value="">Select a role</option>
+          <option value="1">Artist</option>
+          <option value="2">Musicians</option>
+          <option value="3">Actors</option>
+          <option value="4">Makeup Artist</option>
+          <option value="5">Fashion Designer</option>
+          <option value="6">Chef</option>
+          <option value="7">Home Designer</option>
+          <option value="8">Poet/Writer</option>
+          <option value="9">Others</option>
+
+
+         </select>
+          </label>
+        </fieldset>
+        
+    
+        <fieldset>
+          <label for="bio">Bio<textarea id="bio" name="bio" rows="5" cols="30" placeholder="Enter your bio here according to need of position."></textarea>
+          </label>
+        </fieldset>
+        <fieldset>
+       
+            <button type="submit" class="btn">
+                <a href="rprofile.html" class="btn11">Create Profile</a>
+               </button>
+            
+          </fieldset>
+          </div>
+          </form>
+        </body>
+      </html>

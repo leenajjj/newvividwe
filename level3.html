@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Challenge Analytics - Level 3</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #031716, #032f30, #0a7075, #0c969c, #6ba3be, #274d60);
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header {
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        .level {
+            font-size: 1.2rem;
+            color: #FFCC00;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+
+        .form-container {
+            margin: 30px 0;
+        }
+
+        input[type="file"] {
+            font-size: 1rem;
+            padding: 10px;
+            background-color: #032f30;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="file"]:hover {
+            background-color: #045352;
+        }
+
+        .score-container {
+            margin-top: 40px;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .score-container h2 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+        .score-container p {
+            font-size: 1.2rem;
+        }
+
+        .leaderboard {
+            margin-top: 60px;
+            background-color: #1b1b1b;
+            padding: 20px;
+            border-radius: 10px;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .leaderboard h2 {
+            margin-bottom: 20px;
+        }
+
+        .leaderboard ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .leaderboard li {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Dance Challenge Analytics - Level 3</h1>
+        <p>Upload your dance performance and get an AI-generated score based on expert-level metrics such as footwork, choreography, fluidity, energy, synchronization, posture, and more.</p>
+        <div class="level">Level 3 - Expert Challenge</div>
+    </header>
+
+    <!-- Video Upload Section -->
+    <div class="form-container">
+        <h2>Upload Your Dance Video</h2>
+        <input type="file" id="dance-video" accept="video/*">
+    </div>
+
+    <!-- Score Container (to display AI analysis results) -->
+    <div class="score-container" id="score-container">
+        <h2>Your Performance Score</h2>
+        <p><strong>Footwork:</strong> 95%</p>
+        <p><strong>Choreography:</strong> 92%</p>
+        <p><strong>Fluidity:</strong> 90%</p>
+        <p><strong>Energy:</strong> 94%</p>
+        <p><strong>Synchronization:</strong> 91%</p>
+        <p><strong>Posture:</strong> 93%</p>
+        <p><strong>Expression:</strong> 85%</p>
+        <p><strong>Overall Score:</strong> 91%</p>
+    </div>
+
+   
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Powered by AI Performance Analytics | © 2025</p>
+    </footer>
+
+    <script>
+        // JavaScript to handle file upload and display score (this would be later connected to AI model)
+        const fileInput = document.getElementById('dance-video');
+        const scoreContainer = document.getElementById('score-container');
+        
+        fileInput.addEventListener('change', () => {
+            // Here you would integrate the AI model to process the video and generate the score
+            // For now, we'll simulate with random values for footwork, choreography, fluidity, energy, synchronization, posture, and expression.
+            
+            const footworkScore = Math.floor(Math.random() * 100);
+            const choreographyScore = Math.floor(Math.random() * 100);
+            const fluidityScore = Math.floor(Math.random() * 100);
+            const energyScore = Math.floor(Math.random() * 100);
+            const syncScore = Math.floor(Math.random() * 100);
+            const postureScore = Math.floor(Math.random() * 100);
+            const expressionScore = Math.floor(Math.random() * 100);
+            const overallScore = Math.floor((footworkScore + choreographyScore + fluidityScore + energyScore + syncScore + postureScore + expressionScore) / 7);
+            
+            scoreContainer.innerHTML = `
+                <h2>Your Performance Score</h2>
+                <p><strong>Footwork:</strong> ${footworkScore}%</p>
+                <p><strong>Choreography:</strong> ${choreographyScore}%</p>
+                <p><strong>Fluidity:</strong> ${fluidityScore}%</p>
+                <p><strong>Energy:</strong> ${energyScore}%</p>
+                <p><strong>Synchronization:</strong> ${syncScore}%</p>
+                <p><strong>Posture:</strong> ${postureScore}%</p>
+                <p><strong>Expression:</strong> ${expressionScore}%</p>
+                <p><strong>Overall Score:</strong> ${overallScore}%</p>
+            `;
+        });
+    </script>
+
+</body>
+</html>

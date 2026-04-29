@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <style>
+        /* Basic reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #ff3366, #00bcd4);
+            color: rgb(28, 116, 119);
+            text-align: center;
+            height: 100vh;
+        }
+
+        /* Container for the leaderboard */
+        .leaderboard-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            width: 60%;
+            margin: auto;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Title of the leaderboard */
+        .leaderboard-container h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #FFEB3B;
+        }
+
+        .leaderboard-container h2 {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+        }
+
+        /* Styling for leaderboard items */
+        .leaderboard-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .leaderboard-list li {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            margin: 10px 0;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .leaderboard-list li:hover {
+            transform: scale(1.05);
+            background-color: #FF4081;
+        }
+
+        /* Student Name and Score */
+        .leaderboard-list li span {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .leaderboard-list li .name {
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+
+        .leaderboard-list li .score {
+            font-size: 1.2rem;
+            color: #FFD700;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 1rem;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="leaderboard-container">
+        <h1>Vividshe Dance Challenge</h1>
+        <h2>Leaderboard - Top Dancers</h2>
+
+        <ul class="leaderboard-list">
+            <li><span class="name">Akriti Sharma</span><span class="score">98%</span></li>
+            <li><span class="name">Liam Smith</span><span class="score">95%</span></li>
+            <li><span class="name">Preeti Sharma</span><span class="score">93%</span></li>
+            <li><span class="name">James Miller</span><span class="score">90%</span></li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Vividshe Dance Challenge | All rights reserved</p>
+    </footer>
+
+</body>
+</html>
